@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    font-family: 'poppins',sans-serif;
+}
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ 
+body {
+    line-height: 1.6;
+}
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #8202ad;
+    --text-color: #fff;
+    --link-hover-color: #cb40e1;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Shine Animation */
+@keyframes shineAnimation {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #ff5733, #33ff57, #5733ff, #ff33a1, #c54623);
+    background-size: 400% 400%;
+    color: var(--text-color);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); 
+    pointer-events: none;
+    animation: shine 3s infinite;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+
+/* Footer */
+footer {
+    background: linear-gradient(45deg, #ff5733, #33ff57, #5733ff, #ff33a1, #c54623);
+    background-size: 400% 400%;
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); 
+    pointer-events: none;
+    animation: shine 3s infinite;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer .social-media a:hover {
+    color: var(--link-hover-color);
+}
+
+footer form {
+    margin-top: 15px;
+}
+
+footer input[type="email"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+footer button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer button:hover {
+    background-color: var(--link-hover-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    footer .social-media {
+        margin-top: 10px;
+    }
+}
+
+/* Registration Section */
+.registration-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.registration-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.registration-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.registration-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.registration-form input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration-form button:hover {
+    background-color: var(--link-hover-color);
+}
+
+.login-link a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the Address Section */
+.registration-form label[for="address"] {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+.registration-form textarea#address {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    resize: vertical; /* Allow vertical resize */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+    transition: border-color 0.3s ease;
+}
+
+.registration-form textarea#address:focus {
+    border-color: #4CAF50; /* Change border color when focused */
+    outline: none; /* Remove default outline */
+}
+
+.registration-form textarea#address::placeholder {
+    color: #888;
+    font-style: italic;
+}

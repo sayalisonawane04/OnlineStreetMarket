@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* General Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Prevents overflow due to padding and margin */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes the full height of the viewport */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent any unwanted scroll */
+}
+
+header {
+    background-color: #398de7;
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header .logo i {
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffdd57;
+}
+
+main {
+    flex: 1; /* This will make the main content take up the remaining space */
+    padding: 20px;
+    overflow-y: auto; /* Ensures vertical scrolling if needed */
+}
+
+/* Notifications Container */
+.notifications-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    word-wrap: break-word; /* Ensure long words don't break layout */
+}
+
+.notifications-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Individual Notification Item */
+.notification-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+
+.notification-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.notification-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.notification-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.notification-date {
+    font-size: 12px;
+    color: #888;
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        margin-left: 10px;
+    }
+
+    .notifications-container {
+        padding: 15px;
+    }
+
+    .notification-item {
+        padding: 10px;
+    }
+}

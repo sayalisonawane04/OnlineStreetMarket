@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Street Marts</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-shopping-basket"></i> City Street Marts
+        </div>          
+        <nav>
+            <ul>
+                <li><a href="#home" data-page="home">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#contact" data-page="contact">Contact</a></li>
+                <li><a href="#events" data-page="events">Events</a></li>
+                <li><a href="VendorLogin.php">Vendors Login</a></li>
+                <li><a href="login.php">Login/Sign Up</a></li>
+                <li><a href="AdminLogin.php">Admin Login</a></li>
+            </ul>
+        </nav>
+    </header>
+<main id="content">
+    <section id="home" class="hero">
+        <h1>Discover Local Treasures</h1>
+        <p>Shop from Your Favorite Street Vendors</p>
+        <a href="#products" data-page="products"><button>Browse Products</button></a>
+        <button id="joinVendorButton">Join Us as a Vendor</button>
+    </section>
+<section id="products" class="back">
+    <section class="search-bar">
+        <input type="text" placeholder="Search for products, vendors, or events..." required>
+        <button>Search</button>
+    </section>
+
+    <section id="category" class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-list">
+            <div class="category" onclick="redirectToLogin()">
+                <img src="img/categories/FOOD&DRINKS.jpg" alt="Food & Drinks" />
+                Food & Drinks
+            </div>
+            <div class="category" onclick="redirectToLogin()">
+                <img src="img/categories/CRAFT&HANDMADE.jpg" alt="Crafts & Handmade" />
+                Crafts & Handmade
+            </div>
+            <div class="category" onclick="redirectToLogin()">
+                <img src="img/categories/CLOTHINGS&ACCESSORIES.jpg" alt="Clothing & Accessories" />
+                Clothing & Accessories
+            </div>
+            <div class="category" onclick="redirectToLogin()">
+                <img src="img/categories/ART&DECORE.jpg" alt="Art & Decor" />
+                Art & Decor
+            </div>
+            <div class="category" onclick="redirectToLogin()">
+                <img src="img/categories/VEGITABLES.jpg" alt="Vegetables" />
+                Vegetables
+            </div>
+        </div>
+    </section>    
+    
+    <section id="events" class="events">
+        <h2>Upcoming Markets & Events</h2>
+        <div class="event-card-container">
+            <div class="event-card" onclick="redirectToLogin()">
+                <img src="img/events/event1.png" alt="event1" />
+                On Vegetables
+            </div>
+            <div class="event-card" onclick="redirectToLogin()">
+                <img src="img/events/event2.png" alt="event2" />
+                On Art & Decor
+            </div>
+            <div class="event-card" onclick="redirectToLogin()">
+                <img src="img/events/event3.png" alt="event3" />
+                On Clothing & Accessories
+            </div>
+            <div class="event-card" onclick="redirectToLogin()">
+                <img src="img/events/event4.png" alt="event4" />
+                On Food & Drinks
+            </div>
+        </div>
+    </section>
+    
+    <section class="vendor-spotlight">
+        <h2>Meet Some Of Our Vendors</h2>
+        <div class="vendor-card-container">
+            <div class="vendor-card" onclick="redirectToLogin()">
+                <img src="img/vendors/vendor1.jpg" alt="">
+                vishal taskar
+            </div>
+            <div class="vendor-card" onclick="redirectToLogin()">
+                <img src="img/vendors/vendor2.jpg" alt="">
+                siddhesh ambekar
+            </div>
+            <div class="vendor-card" onclick="redirectToLogin()">
+                <img src="img/vendors/vendor3.jpg" alt="">
+                ashabai pagare
+            </div>
+            <div class="vendor-card" onclick="redirectToLogin()">
+                <img src="img/vendors/vendor4.jpg" alt="">
+                bajirav shinde
+            </div>
+            <div class="vendor-card" onclick="redirectToLogin()">
+                <img src="img/vendors/vendor5.jpg" alt="">
+                swapnil kulkarni
+            </div>
+        </div>
+    </section>    
+    
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">"Great experience!"</div>
+    </section>
+</section>
+</main>
+    <footer id="contact">
+        <div>About Us     |     Privacy Policy      |      Terms of Service </div>
+        <div class="social-media">Follow us: 
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>        
+        <div>Contact Us : 8975591487 / 7796430667</div>
+        <form>
+            <label for="newsletter">Subscribe for Updates</label>
+            <input type="email" id="newsletter" placeholder="Your email" required>
+            <button>Subscribe</button>
+        </form>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>

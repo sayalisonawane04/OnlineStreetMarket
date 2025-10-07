@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* General Body and Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Main Order Container */
+.order-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Payment QR Section */
+.payment-qr {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.qr-code img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+/* Payment Icons Section */
+.other-payments {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.payment-icons img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.payment-icons img:hover {
+    opacity: 0.8;
+}
+
+/* Submit Button */
+.submit-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-submit {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #d64550;
+}

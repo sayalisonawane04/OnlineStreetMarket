@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* Base styles */
+
+* {
+    font-family: 'poppins', sans-serif;
+}
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(45deg, #ff5733, #33ff57, #5733ff, #ff33a1, #c54623);
+    background-size: 400% 400%;
+    position: relative;
+    overflow: hidden;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes shine {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    animation: shine 2s infinite;
+}
+
+.logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo i {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+header nav ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+:root {
+    --button-bg: #FF6F61;
+    --button-hover-bg: #D64550;
+    --button-text: white;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 15px;
+    padding: 15px 50px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.back {
+    background-image: url('img/home2.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 15px;
+    width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.categories, .events{
+    padding: 20px;
+    margin-left: 45px;
+    text-align: center;
+}
+
+.event-card, .category {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    width: 200px;
+    margin: 10px;
+}
+
+.category-list, .event-card-container{
+    display: flex;
+    justify-content: center;
+    color: black;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.event-card-container{
+    margin: 20px 0;
+}
+
+.category img, .events img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.category:hover, .event-card:hover{
+    transform: scale(1.05);
+}
+
+
+/* Section for Featured Vendors */
+#vendors {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Title for the Vendors Section */
+#vendors h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Container for Vendor Cards */
+.vendor-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between cards */
+    padding: 0 20px;
+}
+
+/* Style for each Vendor Card */
+.vendor-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px; /* Adjust this width to fit your layout */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects for the Vendor Card */
+.vendor-card:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for the Vendor Image */
+.vendor-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Ensures the image fits within the card */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Style for Vendor Name and Category */
+.vendor-card h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.vendor-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+    /* Reduce the width of vendor cards on smaller screens */
+    .vendor-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #vendors h2 {
+        font-size: 2em; /* Smaller font size for smaller screens */
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .vendor-card {
+        width: 45%; /* Adjust width for medium-sized screens */
+    }
+}
+
+/* Larger Screens */
+@media (min-width: 1025px) {
+    .vendor-card {
+        width: 250px; /* Standard width for larger screens */
+    }
+}
+
+/*    footer    */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff5733, #33ff57, #5733ff, #ff33a1, #c54623);
+    background-size: 400% 400%;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+footer::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    animation: shine 2s infinite;
+}
+
+footer div {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #FFA500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FFCC00;
+}
+
+footer form {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+footer label {
+    margin-right: 10px;
+}
+
+footer input[type="email"] {
+    padding: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 250px;
+    color: white;
+    outline: none;
+}
+
+footer input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer form {
+    margin-top: 10px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.social-media a {
+    margin: 0;
+    color: white;
+}
+
+.social-media img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Media Queries for responsiveness */
+
+/* Mobile devices (portrait) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar input {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .search-bar button {
+        padding: 12px 15px;
+    }
+
+    .category, .event-card{
+        width: 150px;
+        padding: 15px;
+    }
+
+    .category-list, .event-card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    footer input[type="email"] {
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .search-bar input {
+        width: 90%;
+    }
+
+    .category, .event-card{
+        width: 180px;
+    }
+
+    .category-list, .event-card-container{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+/* Large screens (desktops and above) */
+@media (min-width: 1025px) {
+    .search-bar input {
+        width: 500px;
+    }
+
+    .category, .event-card{
+        width: 200px;
+    }
+
+    .category-list, .event-card-container{
+        justify-content: flex-start;
+    }
+}
+
