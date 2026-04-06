@@ -1022,7 +1022,7 @@ class Foo extends Bar implements FooInterface
 **🛒 City Street Mart - Empowering Local Vendors, Serving Communities**  
 **Connecting Neighborhoods Through Digital Grocery Commerce**
 
-**Built with ❤️ by Sayali Sonawane**  
+**Built with by Sayali Sonawane**  
 **© 2025 City Street Mart - Community Grocery Platform**
 
 [![Website](https://img.shields.io/badge/Website-City_Street_Mart-28A745?style=for-the-badge&logo=google-chrome&logoColor=white)](#)
