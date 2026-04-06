@@ -6,12 +6,6 @@
 
 **Connecting Local Vendors with Neighborhood Customers**  
 **PHP/MySQL Powered Grocery Marketplace for Community Commerce**
-
-[![Live Demo](https://img.shields.io/badge/DEMO-COMING_SOON-28A745?style=for-the-badge&logo=php&logoColor=white)](#)
-[![Documentation](https://img.shields.io/badge/DOCS-WIKI-6F42C1?style=for-the-badge&logo=readthedocs&logoColor=white)](https://github.com/vishaltaskar16/Online_Street_Market/wiki)
-[![GitHub Stars](https://img.shields.io/github/stars/vishaltaskar16/Online_Street_Market?style=for-the-badge&logo=github&color=gold)](#)
-[![License](https://img.shields.io/badge/LICENSE-MIT-success?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
-
 </div>
 
 ---
@@ -1002,7 +996,7 @@ class Foo extends Bar implements FooInterface
 ### 👥 **Community & Support**
 | Platform | Purpose | Link |
 |----------|---------|------|
-| **GitHub Issues** | Bug reports, feature requests | [Issues](https://github.com/vishaltaskar16/Online_Street_Market/issues) |
+| **GitHub Issues** | Bug reports, feature requests | |
 | **Stack Overflow** | Technical questions | Tag: `city-street-mart` |
 | **Discord Community** | Real-time discussion | [Join Discord](https://discord.gg/citystreetmart) |
 | **Email Support** | Priority assistance | `support@citystreetmart.com` |
@@ -1013,9 +1007,7 @@ class Foo extends Bar implements FooInterface
 
 ## 🌟 **Support Local Commerce**
 
-[![Star on GitHub](https://img.shields.io/github/stars/vishaltaskar16/Online_Street_Market?style=for-the-badge&logo=github&label=Star%20the%20Repo)](https://github.com/vishaltaskar16/Online_Street_Market)
-[![Watch on GitHub](https://img.shields.io/github/watchers/vishaltaskar16/Online_Street_Market?style=for-the-badge&logo=github&label=Watch%20for%20Updates)](https://github.com/vishaltaskar16/Online_Street_Market)
-[![Fork on GitHub](https://img.shields.io/github/forks/vishaltaskar16/Online_Street_Market?style=for-the-badge&logo=github&label=Fork%20Your%20Copy)](https://github.com/vishaltaskar16/Online_Street_Market)
+
 
 ---
 
@@ -1024,10 +1016,6 @@ class Foo extends Bar implements FooInterface
 
 **Built with by Sayali Sonawane**  
 **© 2025 City Street Mart - Community Grocery Platform**
-
-[![Website](https://img.shields.io/badge/Website-City_Street_Mart-28A745?style=for-the-badge&logo=google-chrome&logoColor=white)](#)
-[![Twitter](https://img.shields.io/badge/Twitter-@CityStreetMart-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](#)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Vishal_Taskar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vishaltaskar)
 
 </div>
 
